@@ -86,26 +86,32 @@ public class Jeopardy implements ActionListener {
 	 * [optional] Use the showImage or playSound methods when the user answers a question 
 	 */
 	
+	
 	private JButton createButton(String dollarAmount) {
 		// Create a new JButton
 		JButton button = new JButton();
 		// Set the text of the button to the dollarAmount
 		button.setText(dollarAmount);
 		// Increment the buttonCount (this should make the layout vertical)
-		buttonCount++;
+		buttonCou t += 100;
 		// Return your new button instead of the temporary button
 		return new JButton("temporary button");
 	}
 
 	public void actionPerformed(ActionEvent arg0) {
 		// Remove this temporary message:
-		JOptionPane.showMessageDialog(null,"pressed " + ((JButton)arg0.getSource()).getText() + " button");
+		//JOptionPane.showMessageDialog(null,"pressed " + ((JButton)arg0.getSource()).getText() + " button");
 
 		// Use the method that plays the jeopardy theme music.
 
 		JButton buttonPressed = (JButton) arg0.getSource();
 		// If the buttonPressed was the firstButton
-		
+		if (buttonPressed.equals(firstButton)) {
+			askQuestion("About how long is the orbital period of newly discovered 9th planet?", "20,000 years", "$700");
+			
+		}else if (buttonPressed.equals(secondButton)) {
+			askQuestion("")
+		}
 			// Call the askQuestion() method
 			
 			// Fill in the askQuestion() method. When you play the game, the score should change.
