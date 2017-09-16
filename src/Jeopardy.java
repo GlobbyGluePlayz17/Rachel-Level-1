@@ -27,9 +27,11 @@ import java.io.File;
 /* This recipe is to be used with the Jeopardy Handout: http://bit.ly/1bvnvd4 */
 
 public class Jeopardy implements ActionListener {
+	private JButton zeroButton;
 	private JButton firstButton;
 	private JButton secondButton;
-	private JButton thirdButton, fourthButton;
+	private JButton thirdButton;
+	private JButton fourthButton;
 	
 	private JPanel quizPanel;
 	int score = 0;
@@ -55,22 +57,33 @@ public class Jeopardy implements ActionListener {
 		quizPanel.add(header);
 		// 5. Add the quizPanel to the frame
 		frame.add(quizPanel);
-		
+		//Zero Button
+		zeroButton = createButton("$200");
+		quizPanel.add(zeroButton);
 		// 6. Use the createButton method to set the value of firstButton 
-		createButton("$1000");
+		firstButton = createButton("$400");
 	// 7. Add the firstButton to the quizPanel
 		quizPanel.add(firstButton);
 		// 8. Write the code inside the createButton() method below. Check that your game looks like Figure 1 in the Jeopardy Handout - http://bit.ly/1bvnvd4.
 		
 		// 9. Use the secondButton variable to hold a button using the createButton method
-		secondButton = new JButton();
+		secondButton = createButton("$600");
 		// 10. Add the secondButton to the quizPanel
 		quizPanel.add(secondButton);
+		
+		//Third and Fourth and Zero Button
+		thirdButton = createButton("$800");
+		quizPanel.add(thirdButton);
+		fourthButton = createButton("$1000");
+		quizPanel.add(fourthButton);
 		// 11. Add action listeners to the buttons (2 lines of code)
+		zeroButton.addActionListener(this);
 		firstButton.addActionListener(this);
 		secondButton.addActionListener(this);
+		thirdButton.addActionListener(this);
+		fourthButton.addActionListener(this);
 		// 12. Fill in the actionPerformed() method below
-		
+		//completed
 		frame.pack();
 		quizPanel.setLayout(new GridLayout(buttonCount+1, 3));
 		frame.add(makeScorePanel(), BorderLayout.NORTH);
@@ -80,9 +93,9 @@ public class Jeopardy implements ActionListener {
 
 	/*
 	 * 13. Use the method provided to play the Jeopardy theme music 
-	 *
+		playJeopardyTheme();
 	 * 14. Add buttons so that you have $200, $400, $600, $800 and $1000 questions
-	 *
+	 *completed
 	 * [optional] Use the showImage or playSound methods when the user answers a question 
 	 */
 	
@@ -93,9 +106,9 @@ public class Jeopardy implements ActionListener {
 		// Set the text of the button to the dollarAmount
 		button.setText(dollarAmount);
 		// Increment the buttonCount (this should make the layout vertical)
-		buttonCou t += 100;
+		buttonCount++;
 		// Return your new button instead of the temporary button
-		return new JButton("temporary button");
+		return button;
 	}
 
 	public void actionPerformed(ActionEvent arg0) {
@@ -103,40 +116,50 @@ public class Jeopardy implements ActionListener {
 		//JOptionPane.showMessageDialog(null,"pressed " + ((JButton)arg0.getSource()).getText() + " button");
 
 		// Use the method that plays the jeopardy theme music.
-
+		playJeopardyTheme();
 		JButton buttonPressed = (JButton) arg0.getSource();
 		// If the buttonPressed was the firstButton
-		if (buttonPressed.equals(firstButton)) {
-			askQuestion("About how long is the orbital period of newly discovered 9th planet?", "20,000 years", "$700");
-			
-		}else if (buttonPressed.equals(secondButton)) {
-			askQuestion("")
+		if (buttonPressed == zeroButton) {
+			askQuestion("What is the closest star to Earth?", "The Sun", 200);
+			zeroButton.setText("");
+		}else if (buttonPressed == firstButton) {
+			askQuestion("Who was the first person to step on the moon?", "Neil Armstrong", 400);
+			firstButton.setText("");
+		}else if (buttonPressed == secondButton) {
+			askQuestion("Who was the first to find that our solar system is acutally heliocentric?", "Copurnicus", 600);
+			secondButton.setText("");
+		}else if (buttonPressed == thirdButton) {
+			askQuestion("What is pluto's biggest moon?", "Charon", 800);
+			thirdButton.setText("");
+		}else if (buttonPressed == fourthButton) {
+			askQuestion("About how long is the orbital period of newly discovered 9th planet?", "20,000 years", 1000);
+			fourthButton.setText("");
 		}
 			// Call the askQuestion() method
-			
+			//completed
 			// Fill in the askQuestion() method. When you play the game, the score should change.
-		
+			//completed
 		// Or if the buttonPressed was the secondButton
-
-
+			//completed
 			// Call the askQuestion() method with a harder question
-			
-		
+			//completed
 		// Clear the button text (set the button text to nothing)
-		
+		//completed
 	}
 
 	private void askQuestion(String question, String correctAnswer, int prizeMoney) {
 		// Remove this temporary message
-		JOptionPane.showMessageDialog(null, "this is where the question will be asked");
+		//JOptionPane.showMessageDialog(null, "this is where the question will be asked");
 		// Use a pop up to ask the user the question
-	
+		String input = JOptionPane.showInputDialog(null, question);
 		// If the answer is correct
-		
+		if (condition) {
+			
+		}input = correctAnswer
 			// Increase the score by the prizeMoney
-			
+			score += prizeMoney;
 			// Call the updateScore() method
-			
+			updateScore();
 			// Pop up a message to tell the user they were correct
 			
 		// Otherwise
