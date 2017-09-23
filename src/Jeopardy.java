@@ -153,24 +153,22 @@ public class Jeopardy implements ActionListener {
 		// Use a pop up to ask the user the question
 		String input = JOptionPane.showInputDialog(null, question);
 		// If the answer is correct
-		if (condition) {
-			
-		}input = correctAnswer
+		if (input == correctAnswer) {
 			// Increase the score by the prizeMoney
 			score += prizeMoney;
 			// Call the updateScore() method
 			updateScore();
 			// Pop up a message to tell the user they were correct
-			
+			JOptionPane.showMessageDialog(null, "Correct! I guess you studied. No, thats just your luck. :o");
 		// Otherwise
-		
+		}else{
 			// Decrement the score by the prizeMoney
-			
+			score -= prizeMoney;
 			// Pop up a message to tell the user the correct answer
-			
+			JOptionPane.showMessageDialog(null, "No, dummy! The correct answer is " + correctAnswer + ". Obviously... >:o");
 			// Call the updateScore() method
-			
-		
+			updateScore();
+		}
 	}
 
 
