@@ -22,7 +22,7 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
 
     FortuneTeller() throws Exception {
    	 // 1. Choose an image for your fortune teller and put it in your default package
-   	 fortuneTellerImage = ImageIO.read(getClass().getResource("crystal_ball_fortuneTeller_program.png"));
+     //fortuneTellerImage = ImageIO.read(getClass().getResource("http://www.bluemaize.net/im/baby/fortune-teller-crystal-ball-2.jpg"));
    	 // 2. Adjust the frameWidth and frameHeight variables to fit your image nicely (doesn’t need a new line of code)
    	 // 4. add a mouse listener to the frame
    	 frame.addMouseListener(this);
@@ -48,40 +48,41 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
    		 // 8. Get the user to enter a question for the fortune teller
    		String question = JOptionPane.showInputDialog("Please enter a question for the fortune teller.");
    		 // 9. Find a spooky sound and put it in your default package (freesound.org)
-   		AudioClip sound = JApplet.newAudioClip(getClass().getResource("creepy-sound.wav"));
+   		//AudioClip sound = JApplet.newAudioClip(getClass().getResource("creepy-sound.wav"));
    		 // 10. Play the sound
-   			sound.play();
+   			//sound.play();
    		 // 11. Use the pause() method below to wait until your music has finished
-   			pause(5);
+   			//pause(5);
    		// 12. Insert your completed Magic 8 ball recipe (http://bit.ly/Zdrf6d) here
-   			Random randint = new Random();
-   			randint.nextInt(4);
-   		// 3. Print out this variable
+   			int randint = new Random().nextInt(4);
    			System.out.println(randint);
+   		// 3. Print out this variable
+   			//System.out.println(randint);
    		// 4. Get the user to enter a question for the 8 ball
    			//String userq = JOptionPane.showInputDialog("Ask the Magic 8 ball a question!");
    		// 5. If the random number is 0
-   			if (randint.equals("0")) {
+   			if (randint == 0) {
    		// -- tell the user "Yes"
    			JOptionPane.showMessageDialog(null, "Yes.");
    		}
    		// 6. If the random number is 1
-   			else if (randint.equals("1")) {
+   			else if (randint == 1) {
    		// -- tell the user "No"
    				JOptionPane.showMessageDialog(null, "No.");
    			}
    		// 7. If the random number is 2
-   			else if (randint.equals("2")) {
+   			else if (randint == 2) {
    		// -- tell the user "Maybe you should ask Google?"
    				JOptionPane.showMessageDialog(null, "Maybe you should ask Gooogle?");
    			}
    		// 8. If the random number is 3
-   			else if (randint.equals("3")) {
+   			else if (randint == 3) {
    				JOptionPane.showMessageDialog(null, "Maybe :o");
    			}
    		// -- write your own answer
    		}
-   	}
+
+   	 }
 
 
     private boolean areClose(int mouseX, int secretLocationX) {
@@ -95,6 +96,8 @@ public class FortuneTeller extends JPanel implements Runnable, MouseListener {
    		 e.printStackTrace();
    	 }
     }
+    
+   
     
     /**************** don't worry about the stuff under here *******************/
     
