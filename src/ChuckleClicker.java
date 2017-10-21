@@ -7,6 +7,5 @@ public class ChuckleClicker {
 
 	public void makeButtons() {
 		JOptionPane.showMessageDialog(null, ":O");
-
 	}
 }
