@@ -1,10 +1,10 @@
 import javax.swing.JFrame;
-import org.teachingextensions.logo.MultiTurtlePanel;
-import org.teachingextensions.logo.Turtle;
+//import org.teachingextensions.logo.MultiTurtlePanel;
+//import org.teachingextensions.logo.Turtle;
 
 public class LandofTurtles {
 	public static void main(String[] args) {
-		MultiTurtlePanel panel = new MultiTurtlePanel();
+		//MultiTurtlePanel panel = new MultiTurtlePanel();
 		String galapagosIslands = "https://farm2.staticflickr.com/1104/752631367_5c5d474ba5_o.jpg";
 
 // 1. Create a frame & make it visible
