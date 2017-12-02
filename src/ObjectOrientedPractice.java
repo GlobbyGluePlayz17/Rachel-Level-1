@@ -11,3 +11,5 @@ public class ObjectOrientedPractice {
 	}
 }
 //void is when you do not return anything; otherwise with int, you have to do "return s; int s = 5;"
+//constructors do not have a return type
+//this.name = String name = member variable ...?
