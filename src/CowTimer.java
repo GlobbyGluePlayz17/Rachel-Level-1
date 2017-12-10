@@ -34,7 +34,7 @@ public class CowTimer {
 			Thread.sleep(1000);
 		}
 		if (i == 0) {
-			//playSound("moootoooo.mp3");
+			playSound("moo.wav");
 			speak("It's time to eat grasss!");
 		}
 		/*
