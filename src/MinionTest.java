@@ -1,6 +1,4 @@
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * To make these tests pass, you will need to create a Minion class with the member variables below.
@@ -18,7 +16,6 @@ import org.junit.Test;
 
 public class MinionTest {
 
-	@Test
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
 		assertEquals("Stuart", stuart.getName());
@@ -31,7 +28,6 @@ public class MinionTest {
 		assertEquals("yellow", dave.getColor());
 	}
 
-	@Test
 	public void testSetters() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
 

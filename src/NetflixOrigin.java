@@ -7,14 +7,6 @@ public class NetflixOrigin {
 		Movie m3 = new Movie("C++", 3);
 		Movie m4 = new Movie("Python", 2);
 		Movie m5 = new Movie("Boo", 4);
-		
-		System.out.println(m1.getTicketPrice());
-		System.out.println(m2.getTicketPrice());
-		System.out.println(m3.getTicketPrice());
-		System.out.println(m4.getTicketPrice());
-		System.out.println(m5.getTicketPrice());
-		
-		System.out.println("");
 
 		NetflixQueue nq1 = new NetflixQueue();
 		
@@ -24,6 +16,14 @@ public class NetflixOrigin {
 		nq1.addMovie(m4);
 		nq1.addMovie(m5);
 		nq1.printMovies();
+		
+		System.out.println("");
+		
+		System.out.println(m1.getTicketPrice());
+		System.out.println(m2.getTicketPrice());
+		System.out.println(m3.getTicketPrice());
+		System.out.println(m4.getTicketPrice());
+		System.out.println(m5.getTicketPrice());
 		
 		System.out.println("");
 		

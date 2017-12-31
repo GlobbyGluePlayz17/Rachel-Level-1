@@ -62,7 +62,7 @@ public class Jeopardy implements ActionListener {
 		quizPanel.add(zeroButton);
 		// 6. Use the createButton method to set the value of firstButton 
 		firstButton = createButton("$400");
-	// 7. Add the firstButton to the quizPanel
+		// 7. Add the firstButton to the quizPanel
 		quizPanel.add(firstButton);
 		// 8. Write the code inside the createButton() method below. Check that your game looks like Figure 1 in the Jeopardy Handout - http://bit.ly/1bvnvd4.
 		
