@@ -13,6 +13,7 @@ public class ChuckleClicker implements ActionListener{
 	public static void main(String[] args) {
 		ChuckleClicker CC1 = new ChuckleClicker();
 		ChuckleClicker CC2 = new ChuckleClicker();
+		CC1.makeButtons();
 		CC2.makeButtons();
 	}
 
@@ -29,6 +30,7 @@ public class ChuckleClicker implements ActionListener{
 		button2.setText("Punchline");
 		frame.setVisible(true);
 		button.addActionListener(this);
+		button2.addActionListener(this);
 		frame.pack();
 	}
 
