@@ -50,7 +50,7 @@ public class WhackAMole implements ActionListener{
 		Date timeAtEnd = new Date();
 		if (molesWacked == 10) {
 			JOptionPane.showMessageDialog(null, "Your whack rate is " + ((timeAtEnd.getTime() - timeAtStart.getTime()) / 1000.00 / molesWhacked) + " moles per second.");
-			JOptionPane.showMessageDialog(null, "End Game.");
+			JOptionPane.showMessageDialog(null, "End of game");
 		}
 		
 		if (fails == 1) {
@@ -66,10 +66,10 @@ public class WhackAMole implements ActionListener{
 		}
 		
 		if (fails == 4) {
-			speak("You are a complete waste of atoms. U even hue-mon?");
+			speak("You are a complete waste of atoms! U even hue-mon?!?");
 		}
 		
-		if (fails == 5) {
+		if (fails >= 5) {
 			speak("You should have never existed. Do you even have a brain?!?");
 		}
 	}
