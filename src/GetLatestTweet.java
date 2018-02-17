@@ -1,3 +1,5 @@
+import javax.swing.JButton;
+
 /*
 1. Make a UI with a button and a text field for a search term.			
 
@@ -34,5 +36,10 @@ Twitter4J: 			twitter4j-core-3.0.5
 
 
 public class GetLatestTweet {
-
+	public static void main(String[] args) {
+		
+	}
+	public void createUI() {
+		JButton button = new JButton();
+	}
 }
