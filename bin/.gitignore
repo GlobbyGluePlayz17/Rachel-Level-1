@@ -38,10 +38,16 @@
 /TeaParty.class
 /TeaPartyTest.class
 /Textbook.class
+/TypingTutor.class
 /WhackAMole.class
 /WhackAMole.wav
 /moo.mp3
 /moo.wav
 /suprised_fortun_teller_woman.jpg
 /unnamed.png
-/TypingTutor.class
+/MakeTea.class
+/MakeTea$Cup.class
+/MakeTea$Kettle$Water.class
+/MakeTea$Kettle.class
+/MakeTea$TeaBag.class
+/MakeTea$TeaMaker.class
