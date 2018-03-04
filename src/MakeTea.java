@@ -2,11 +2,10 @@ import javax.swing.JOptionPane;
 
 public class MakeTea {
 	// Copyright Wintriss Technical Schools 2013
-	public class TeaMaker {
 		/* Figure out how to make a cup of tea using the classes below */
-		public void main(String[] args) {
-			//JOptionPane.showInputDialog("We are going to make a cup of tea. First off, what flavor would you like? Green, Mint, Chamomile, or Passion Fruit?");
-			TeaBag teabag = new TeaBag("Green");
+		public static void main(String[] args) {
+			String userinput = JOptionPane.showInputDialog("We are going to make a cup of tea. First off, what flavor would you like? Green, Mint, Chamomile, or Passion Fruit?");
+			TeaBag teabag = new TeaBag(userinput);
 			Kettle kettle = new Kettle();
 			kettle.getWater();
 			kettle.boil();
@@ -70,5 +69,3 @@ public class MakeTea {
 		}
 
 	}
-	
-}
