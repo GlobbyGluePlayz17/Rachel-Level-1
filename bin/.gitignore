@@ -4,6 +4,7 @@
 /Cat.class
 /ChuckleClicker.class
 /CowTimer.class
+/Cup.class
 /CutenessTV.class
 /DisneyCharacter.class
 /DisneyRunner.class
@@ -16,8 +17,11 @@
 /IntroToMethodWriting.class
 /JFramePractice.class
 /Jeopardy.class
+/Kettle$Water.class
+/Kettle.class
 /LandofTurtles.class
 /Magic8Ball.class
+/MakeTea.class
 /Minion.class
 /MinionTest.class
 /Movie.class
@@ -35,6 +39,7 @@
 /Smurf.class
 /SmurfsRunner.class
 /Supply.class
+/TeaBag.class
 /TeaParty.class
 /TeaPartyTest.class
 /Textbook.class
@@ -44,15 +49,6 @@
 /moo.mp3
 /moo.wav
 /suprised_fortun_teller_woman.jpg
-/unnamed.png
-/MakeTea.class
-/MakeTea$Cup.class
-/MakeTea$Kettle$Water.class
-/MakeTea$Kettle.class
-/MakeTea$TeaBag.class
-/MakeTea$TeaMaker.class
-/Cup.class
-/Kettle$Water.class
-/Kettle.class
-/TeaBag.class
 /teaimage.jpg
+/unnamed.png
+/MagicBox.class
