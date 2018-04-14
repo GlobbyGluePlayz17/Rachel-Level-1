@@ -34,6 +34,7 @@ import javax.swing.JPanel;
 		JFrame frame = new JFrame("The Magic Box contains many secrets...");
 		JPanel panel = new JPanel();
 		JLabel boxLabelWithImage;
+		JLabel openboxLabelWithImage;
 		
 		BufferedImage backgroundImage;
 
@@ -67,6 +68,7 @@ import javax.swing.JPanel;
 			
 			String imageFiletwo = "openbox.jpg";
 			openboxLabelWithImage = loadImageFromWithinProject(imageFile);
+			openboxLabelWithImage.addMouseListener(this);
 			
 			try {
 				backgroundImage = ImageIO.read(new File(imageFile));
