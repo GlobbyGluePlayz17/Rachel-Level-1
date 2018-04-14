@@ -65,6 +65,9 @@ import javax.swing.JPanel;
 			boxLabelWithImage = loadImageFromWithinProject(imageFile);
 			boxLabelWithImage.addMouseListener(this);
 			
+			String imageFiletwo = "openbox.jpg";
+			openboxLabelWithImage = loadImageFromWithinProject(imageFile);
+			
 			try {
 				backgroundImage = ImageIO.read(new File(imageFile));
 			} catch (IOException e) {
