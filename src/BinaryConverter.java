@@ -11,8 +11,8 @@ import javax.swing.JTextField;
 public class BinaryConverter implements ActionListener {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
-	JTextField userinput = new JTextField();
-	JTextField answer = new JTextField();
+	JTextField userinput = new JTextField(5);
+	JTextField answer = new JTextField(5);
 	JButton button = new JButton("convert");
 
 	public static void main(String[] args) {
