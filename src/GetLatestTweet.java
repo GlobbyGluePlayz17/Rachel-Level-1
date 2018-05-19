@@ -2,7 +2,7 @@ import javax.swing.JButton;
 
 /*
 1. Make a UI with a button and a text field for a search term.			
-
+	
 
 
 2. When the button is clicked, print “tweet tweet”.
@@ -40,6 +40,8 @@ public class GetLatestTweet {
 		
 	}
 	public void createUI() {
+		JTextField 
 		JButton button = new JButton();
+		
 	}
 }

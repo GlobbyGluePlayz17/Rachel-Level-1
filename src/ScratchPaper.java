@@ -32,3 +32,7 @@ public class ScratchPaper {
 //Non-Primitive types - String
 	//has methods in itself, basically its own class
 	//ex: .substring(0, 5) --- first # is inclusive(counted), second # is exclusive(not-counted)
+
+//Variable types:
+	//member/instance variable - non-static (this.pinapple)
+	//static variable - static, shared by entire class (move(0);)
